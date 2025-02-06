@@ -1,0 +1,24 @@
+{
+  "name": "bio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "import_raw": "tsx raw.ts",
+    "import_ligands": "tsx insert_ligands.ts",
+    "pre_filter": "tsx pre-filter.ts",
+    "calculate_qed": "tsx qed.ts",
+    "calculate_dist": "tsx dist.ts",
+    "full": "yarn import_raw && yarn import_ligands && yarn pre_filter && yarn calculate_qed && yarn calculate_dist"
+  },
+  "dependencies": {
+    "@types/csv-parse": "^1.2.5",
+    "@types/knex": "^0.16.1",
+    "@types/node": "^22.9.0",
+    "csv-parse": "^5.5.6",
+    "knex": "^3.1.0",
+    "mysql2": "^3.11.4",
+    "rdkit": "^0.5.1",
+    "tsx": "^4.19.2"
+  }
+}

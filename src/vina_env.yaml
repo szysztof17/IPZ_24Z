@@ -1,0 +1,25 @@
+name: vina_enviroment
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10.7
+  - numpy
+  - swig
+  - boost-cpp
+  - libboost
+  - sphinx
+  - sphinx_rtd_theme
+  - scipy
+  - rdkit
+  - gemmi
+  - cctbx-base
+  - ipywidgets 
+  - ipykernel
+  - jupyter
+  - jupyterlab
+  - notebook
+  - pip
+  - pip:
+      - prody
+      - py3Dmol
